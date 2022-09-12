@@ -1,22 +1,33 @@
 #include <stdio.h>
+
+#include <unistd.h>
+
+
+
 /**
-* main - printing numbers from 0-9 with commas and space between them
-* Description: using the main function
-* this program prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
-* Return: 0
-*/
+ *
+ * * main - print quote
+ *
+ * *
+ *
+ * * Description: prints Dora's quote
+ *
+ * *
+ *
+ * * Return: Always 1 (Success)
+ *
+ * */
+
+
+
+
+
 int main(void)
+
 {
-	int c;
-	for (c = 48; c <= 57; c++)
-	{
-		putchar(c);
-		if (c != 57)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-	}
-	putchar('\n');
-	return (0);
+
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+
+	return (1);
+
 }
