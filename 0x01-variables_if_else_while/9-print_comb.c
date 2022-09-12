@@ -1,33 +1,23 @@
 #include <stdio.h>
-
-#include <unistd.h>
-
-
-
 /**
+ * main - entry point
  *
- * * main - print quote
+ * Return: alway returns 0
  *
- * *
- *
- * * Description: prints Dora's quote
- *
- * *
- *
- * * Return: Always 1 (Success)
- *
- * */
-
-
-
-
-
+ */
 int main(void)
-
 {
+	int i;
 
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-
-	return (1);
-
+	for (i = 10; i < 20; i++)
+	{
+		putchar((i % 10) + '0');
+		if (i != 19)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
 }
