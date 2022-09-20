@@ -10,7 +10,6 @@ void print_rev(char *s)
 {
 	int count = 0;
 
-
 	while (count >= 0)
 	{
 		if (s[count] == '\0')
@@ -22,5 +21,4 @@ void print_rev(char *s)
 
 		putchar(s[count]);
 	putchar('\n');
-
 }	
